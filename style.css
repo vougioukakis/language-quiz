@@ -167,3 +167,36 @@ input {
     width: fit-content;
     margin: 0 auto;
 }
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+    #options {
+        display:grid;
+        grid-template-columns: 200px 200px;
+        grid-row: auto auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .radio-label{
+        padding: 26px 20px;
+        text-align: center;
+    }
+
+    .radio-label:not(:last-of-type){
+        border-right: none;
+    }
+
+    button{
+        width: 40%;
+        height: 80px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
